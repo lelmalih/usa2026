@@ -260,19 +260,24 @@
 
 		.event { display: flex; 
 			align-items: center; 
-			margin-top: 15px; padding: 15px; border-radius: 4px;
+			margin-top: 15px; padding: 5px 10px; border-radius: 4px;
 			background: #252525;
     		border-left: 4px solid var(--text-secondary);
 		}
-        .time { font-size: 1.3em; font-weight: bold; color: #666; min-width: 70px; margin-right: 15px; }
+        .time { font-size: 1.3em; font-weight: bold; color: #666; margin-right: 5px; }
         .details { flex-grow: 1; margin-right: 10px; }
 		.title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
-        .time { font-size: 0.85em; font-weight: bold; color: white; background-color: #2b6cb0; padding: 3px 8px; border-radius: 12px; white-space: nowrap; }
+        .time { font-size: 10px; color: white; background-color: #2b6cb0; padding: 3px 8px; border-radius: 12px; white-space: nowrap; }
         .actions { display: flex; gap: 10px; }
-        .icon-btn { display: inline-flex; justify-content: center; align-items: center; width: 44px; height: 44px; background-color: #edf2f7; color: #2d3748; text-decoration: none; border-radius: 50%; transition: background 0.2s, transform 0.1s; }
+        .icon-btn { display: inline-flex; justify-content: center; align-items: center; width: 35px; height: 35px; background-color: #edf2f7; color: #2d3748; text-decoration: none; border-radius: 50%; transition: background 0.2s, transform 0.1s; }
         .icon-btn.maps { background-color: var(--hotel-accent); color: #fff; }
         .icon-btn.photos { background-color: var(--hotel-accent); color: #fff; }
         .material-symbols-outlined { font-size: 24px; }
+
+		h3 {
+			font-size: 14px;
+			font-weight: normal;
+		}
     </style>
 </head>
 <body>
@@ -330,10 +335,8 @@
 				<div class="event">
 					<div class="details">
 						<div class="title-row">
-							<span class="time">09:00</span>
-							<h3>Empire State Building</h3>
+							<h3><span class="time">09:00</span> Départ de l'hôtel à pied (environ 10 min de marche) pour l'Empire State Building</h3>
 						</div>
-						<p>Activité Pass 1. Départ à pied de l'hôtel (132 W 28th St).</p>
 					</div>
 					<div class="actions">
 						<a href="https://www.google.com/maps/search/?api=1&query=Empire+State+Building+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
@@ -347,11 +350,9 @@
 
 				<div class="event">
 					<div class="details">
-						<div class="title-row">
-							<span class="time">11:00</span>
-							<h3>Bryant Park & NY Public Library</h3>
+						<div class="title-row">							
+							<h3><span class="time">11:00</span>Marche vers le nord jusqu'à Bryant Park et visite de la New York Public Library</h3>
 						</div>
-						<p>Marche vers le nord. Toilettes publiques à Bryant Park.</p>
 					</div>
 					<div class="actions">
 						<a href="https://www.google.com/maps/search/?api=1&query=Bryant+Park+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
@@ -365,11 +366,17 @@
 
 				<div class="event">
 					<div class="details">
-						<div class="title-row">
-							<span class="time">14:00</span>
-							<h3>Grand Central & Chrysler Building</h3>
+						<div class="title-row">							
+							<h3><span class="time">12:30</span>Pause déjeuner dans le secteur de Bryant Park / Grand Central: Le buffet de Whole Foods Market (face à Bryant Park) ou Los Tacos No. 1.</h3>
 						</div>
-						<p>Plafond céleste, Whispering Gallery.</p>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">							
+							<h3><span class="time">14:00</span> Exploration de Grand Central Terminal (plafond céleste, Whispering Gallery) et vue extérieure du Chrysler Building.</h3>
+						</div>
 					</div>
 					<div class="actions">
 						<a href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Terminal+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
@@ -383,11 +390,9 @@
 
 				<div class="event">
 					<div class="details">
-						<div class="title-row">
-							<span class="time">15:30</span>
-							<h3>St Patrick, Trump Tower & Rockefeller</h3>
+						<div class="title-row">							
+							<h3><span class="time">15:30</span> Remontée de la 5ème Avenue : Cathédrale St Patrick, Trump Tower, et esplanade du Rockefeller Center.</h3>
 						</div>
-						<p>Remontée de la 5ème Avenue.</p>
 					</div>
 					<div class="actions">
 						<a href="https://www.google.com/maps/search/?api=1&query=Rockefeller+Center+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
@@ -401,11 +406,9 @@
 
 				<div class="event">
 					<div class="details">
-						<div class="title-row">
-							<span class="time">17:30</span>
-							<h3>Times Square</h3>
+						<div class="title-row">							
+							<h3><span class="time">17:30</span> Immersion dans les néons de Times Square. Découverte de l'ambiance mythique puis dîner tôt dans les environs.</h3>
 						</div>
-						<p>Découverte des néons et dîner tôt dans le secteur.</p>
 					</div>
 					<div class="actions">
 						<a href="https://www.google.com/maps/search/?api=1&query=Times+Square+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
@@ -416,6 +419,86 @@
 						</a>
 					</div>
 				</div>
+
+				<span class="sub-step-date">Dimanche 26 juillet</span>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">							
+							<h3><span class="time">09:00</span> Métro Ligne 1 (depuis 28th St) en direction du nord jusqu'à Harlem. Messe Gospel à Harlem. La First Corinthian Baptist Church accueille très bien les visiteurs. Arriver 45 minutes avant.</h3>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=First+Corinthian+Baptist+Church+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=First+Corinthian+Baptist+Church+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">							
+							<h3><span class="time">12:00</span> Déjeuner à Harlem ou aux abords nord de Central Park. Amy Ruth's (spécialité de soul food/poulet frit).</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">							
+							<h3><span class="time">14:00</span> Trajet vers l'Upper East Side (bus ou métro). Vue extérieure de l'architecture du Guggenheim. Traversée de Central Park du nord vers le sud : balade emblématique au Bow Bridge et Bethesda Terrace.</h3>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=Bethesda+Terrace+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=Bethesda+Terrace+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">							
+							<h3><span class="time">16:00</span> MoMA</h3>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=MoMA+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=MoMA+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">							
+							<h3><span class="time">19:30</span> Promenade nocturne au Lincoln Center avant de redescendre vers l'hôtel.</h3>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=Lincoln+Center+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=Lincoln+Center+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<span class="sub-step-date">Lunndi 27 juillet</span>
+
+				<span class="sub-step-date">Mardi 28 juillet</span>
+
+				<span class="sub-step-date">Mercredi 29 juillet</span>
 				
                 
             </div>
