@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="noindex, nofollow">
     <title>USA Trip - Black Edition Fixed</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         :root {
             --bg-color: #0f0f0f;
@@ -71,6 +72,16 @@
             display: block;
             text-transform: uppercase;
 			font-size: 20px;
+        }
+
+		.sub-step-date {
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 15px;
+			margin-top: 15px;
+            display: block;
+            text-transform: uppercase;
+			font-size: 16px;
         }
 
         .card {
@@ -246,6 +257,22 @@
 			color: #666;
 			margin-top: 4px;
 		}
+
+		.event { display: flex; 
+			align-items: center; 
+			margin-top: 15px; padding: 15px; border-radius: 4px;
+			background: #252525;
+    		border-left: 4px solid var(--text-secondary);
+		}
+        .time { font-size: 1.3em; font-weight: bold; color: #666; min-width: 70px; margin-right: 15px; }
+        .details { flex-grow: 1; margin-right: 10px; }
+		.title-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+        .time { font-size: 0.85em; font-weight: bold; color: white; background-color: #2b6cb0; padding: 3px 8px; border-radius: 12px; white-space: nowrap; }
+        .actions { display: flex; gap: 10px; }
+        .icon-btn { display: inline-flex; justify-content: center; align-items: center; width: 44px; height: 44px; background-color: #edf2f7; color: #2d3748; text-decoration: none; border-radius: 50%; transition: background 0.2s, transform 0.1s; }
+        .icon-btn.maps { background-color: var(--hotel-accent); color: #fff; }
+        .icon-btn.photos { background-color: var(--hotel-accent); color: #fff; }
+        .material-symbols-outlined { font-size: 24px; }
     </style>
 </head>
 <body>
@@ -296,6 +323,98 @@
 				
 				<div style="text-align: center">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96716.82174653107!2d-74.05421473498637!3d40.75321127448913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259c41046e2fb%3A0x66b8a69b3f1b202b!2sAloft%20New%20York%20Chelsea!5e0!3m2!1sfr!2sfr!4v1775226750814!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+				</div>
+
+				<span class="sub-step-date">Samedi 25 juillet</span>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">
+							<span class="time">09:00</span>
+							<h3>Empire State Building</h3>
+						</div>
+						<p>Activité Pass 1. Départ à pied de l'hôtel (132 W 28th St).</p>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=Empire+State+Building+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=Empire+State+Building+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">
+							<span class="time">11:00</span>
+							<h3>Bryant Park & NY Public Library</h3>
+						</div>
+						<p>Marche vers le nord. Toilettes publiques à Bryant Park.</p>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=Bryant+Park+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=Bryant+Park+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">
+							<span class="time">14:00</span>
+							<h3>Grand Central & Chrysler Building</h3>
+						</div>
+						<p>Plafond céleste, Whispering Gallery.</p>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=Grand+Central+Terminal+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=Grand+Central+Terminal+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">
+							<span class="time">15:30</span>
+							<h3>St Patrick, Trump Tower & Rockefeller</h3>
+						</div>
+						<p>Remontée de la 5ème Avenue.</p>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=Rockefeller+Center+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=Rockefeller+Center+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="event">
+					<div class="details">
+						<div class="title-row">
+							<span class="time">17:30</span>
+							<h3>Times Square</h3>
+						</div>
+						<p>Découverte des néons et dîner tôt dans le secteur.</p>
+					</div>
+					<div class="actions">
+						<a href="https://www.google.com/maps/search/?api=1&query=Times+Square+New+York" class="icon-btn maps" target="_blank" title="Voir sur Maps">
+							<span class="material-symbols-outlined">location_on</span>
+						</a>
+						<a href="https://www.google.com/search?tbm=isch&q=Times+Square+New+York" class="icon-btn photos" target="_blank" title="Voir les photos">
+							<span class="material-symbols-outlined">image</span>
+						</a>
+					</div>
 				</div>
 				
                 
